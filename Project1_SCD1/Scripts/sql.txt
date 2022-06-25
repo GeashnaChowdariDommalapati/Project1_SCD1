@@ -1,0 +1,43 @@
+create database if not exists project1;
+use project1;
+set global local_infile=1;
+create table customers_p2 (
+custid integer(10),
+username varchar(30),
+quote_count varchar(30),
+ip varchar(30),
+entry_time varchar(30),
+prp_1 varchar(30),
+prp_2 varchar(30),
+prp_3 varchar(30),
+ms varchar(30),
+http_type varchar(30),
+purchase_category varchar(30),
+total_count varchar(30),
+purchase_sub_category varchar(30),
+http_info varchar(3000),
+status_code integer(10),
+year int,
+month int
+);
+
+create table if not exists project1_sql_exp (
+custid integer(10),
+username varchar(30),
+quote_count varchar(30),
+ip varchar(30),
+entry_time varchar(30),
+prp_1 varchar(30),
+prp_2 varchar(30),
+prp_3 varchar(30),
+ms varchar(30),
+http_type varchar(30),
+purchase_category varchar(30),
+total_count varchar(30),
+purchase_sub_category varchar(30),
+http_info varchar(3000),
+status_code integer(10),
+year int,
+month int
+);
+

@@ -1,0 +1,7 @@
+HOST=localhost
+PORT_NO=3306
+DB_NAME=project1
+USERNAME=root
+PASSWORD_FILE=file:///home/saif/cohort_f11/datasets/sqoop.pwd
+OP_DIR=/user/saif/project/day
+ADD_DATE_VAL=1

@@ -1,0 +1,12 @@
+use project1;
+
+truncate table customers_p2;
+
+set global local_infile=1;
+
+load data local infile '/home/saif/cohort_f11/datasets/Day.csv' into table customers_p2 FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n';
+
+update customers_p2 set year=year(STR_TO_DATE(SUBSTRING_INDEX(entry_time,' ', 1),'%d/%b/%Y:%H:%i:%s'));
+update customers_p2 set month=month(STR_TO_DATE(SUBSTRING_INDEX(entry_time,' ', 1),'%d/%b/%Y:%H:%i:%s'));
+
+truncate table project1_sql_exp;

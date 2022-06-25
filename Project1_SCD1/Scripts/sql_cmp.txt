@@ -1,0 +1,3 @@
+use project1;
+
+select * from customers_p2 where custid not in (select custid from project1_sql_exp);
