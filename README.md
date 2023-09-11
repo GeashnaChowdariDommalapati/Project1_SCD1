@@ -80,11 +80,11 @@ Technologies and tools that are used in the project
 * For the SCD1, the method I followed is to use left join, right join and inner join which gives the outputs individually and finally combine all the outputs by using union which automatically eliminates duplicates which is the historical records.
 
 
-## Creating Staging Table And Performing Data Recialiation
+## Creating Staging Table And Performing Data Reconciliation
 
-* Data reconcialiation in the sense, the number of records entering has to be exactly equal when it is exporting the data again to the MySQL table.
-* In our case data reconcialiation is done by using the timestamp column which is created in the input MySQL table.
+* Data reconciliation in the sense, the number of records entering has to be exactly equal when it is exporting the data again to the MySQL table.
+* In our case data reconciliation is done by using the timestamp column which is created in the input MySQL table.
 
 ## Loading Data Again To The MySQL
 
-* In the end, I loading the data from the staging table to the MySQL by using sqoop expor command.
+* In the end, Loaded the data from the staging table to the MySQL by using sqoop export command.
